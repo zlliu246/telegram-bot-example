@@ -7,7 +7,7 @@ This telegram bot replies you with whatever you send it
     eg. if you send "hello" to it, it will reply with "hello"
 """
 
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Dispatcher
+from telegram.ext import *
 
 TOKEN="INSERT TELEGRAM BOT TOKEN HERE"
 
