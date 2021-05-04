@@ -1,15 +1,12 @@
-"""
-Copy paste this code, insert your token, and run this code
-Windows: `python quickstart.py` 
-MacOS: `python3 quickstart.py`
+import os
+from dotenv import load_dotenv
 
-This telegram bot replies you with whatever you send it
-    eg. if you send "hello" to it, it will reply with "hello"
-"""
+load_dotenv() 
+TOKEN = os.getenv("TOKEN")
+
+print("Your telegram bot token is:", TOKEN) 
 
 from telegram.ext import *
-
-TOKEN = "INSERT TELEGRAM BOT TOKEN HERE"
 
 def route(update, context):
     # text represents whatever you send it
